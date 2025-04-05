@@ -57,3 +57,45 @@ tests/start_test.py .                                                    [100%]
 ```
 
 ### DockerHub
+```
+(venv) levz@LevsLaptop:~/projects/homework8$ docker build -t l3vz/homework8 .
+[+] Building 8.8s (10/10) FINISHED                                                       docker:default
+ => [internal] load build definition from Dockerfile                                               0.0s
+ => => transferring dockerfile: 157B                                                               0.0s
+ => [internal] load metadata for docker.io/library/python:3.12                                     0.4s
+ => [auth] library/python:pull token for registry-1.docker.io                                      0.0s
+ => [internal] load .dockerignore                                                                  0.0s
+ => => transferring context: 308B                                                                  0.0s
+ => [1/4] FROM docker.io/library/python:3.12@sha256:4e7024df2f2099e87d0a41893c299230d2a974c3474e6  0.0s
+ => => resolve docker.io/library/python:3.12@sha256:4e7024df2f2099e87d0a41893c299230d2a974c3474e6  0.0s
+ => [internal] load build context                                                                  0.0s
+ => => transferring context: 22.00kB                                                               0.0s
+ => CACHED [2/4] WORKDIR /myapp                                                                    0.0s
+ => [3/4] COPY . /myapp                                                                            0.1s
+ => [4/4] RUN pip install -r requirements.txt                                                      5.9s
+ => exporting to image                                                                             2.0s
+ => => exporting layers                                                                            1.2s
+ => => exporting manifest sha256:6e1d8bcca5af180ba69f03b6054abd151de98588616bd46d2dc0ab505883fc12  0.0s
+ => => exporting config sha256:cf789d3cd7bc8e7fd07830ec9685b37d321b675204b10b837643f8f35e6d8a64    0.0s
+ => => exporting attestation manifest sha256:446be7322bac5eb717c8420064758e3b56432441ac087719cb8a  0.0s
+ => => exporting manifest list sha256:d27f23bd9bf30c23ec41e4f079067f72959c7a4cc97cf245bfc0417db37  0.0s
+ => => naming to docker.io/l3vz/homework8:latest                                                   0.0s
+ => => unpacking to docker.io/l3vz/homework8:latest                                                0.7s
+(venv) levz@LevsLaptop:~/projects/homework8$ docker push l3vz/homework8
+Using default tag: latest
+The push refers to repository [docker.io/l3vz/homework8]
+f83b257c563b: Pushed
+2a9f3efb6398: Pushed
+353e14e5cc47: Pushed
+d5321eab8cb4: Pushed
+7cd785773db4: Pushed
+c9407c03fba7: Pushed
+091eb8249475: Pushed
+255774e0027b: Pushed
+fe9b98c61f45: Pushed
+ccefd12aaca9: Pushed
+efbe76e576ea: Pushed
+latest: digest: sha256:d27f23bd9bf30c23ec41e4f079067f72959c7a4cc97cf245bfc0417db3799588 size: 856
+```
+
+![dh](res/DockerHub_screenshot.png)
