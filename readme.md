@@ -99,3 +99,6 @@ latest: digest: sha256:d27f23bd9bf30c23ec41e4f079067f72959c7a4cc97cf245bfc0417db
 ```
 
 ![dh](res/DockerHub_screenshot.png)
+
+# DockerHub GitHub Actions Integration
+Docker build is being deployed to dockerhub automatically on PR push - see actions on this repo
